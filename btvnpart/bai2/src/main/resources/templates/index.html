@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Từ điển Anh - Việt</title>
+</head>
+<body>
+
+<h2>Tra cứu từ điển Anh - Việt</h2>
+
+<form th:action="@{/search}" method="post">
+  Nhập từ tiếng Anh:
+  <input type="text" name="word">
+  <button type="submit">Tra cứu</button>
+</form>
+
+</body>
+</html>
