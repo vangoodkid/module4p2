@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Kết quả</title>
+</head>
+<body>
+
+<h2>Các gia vị đã chọn</h2>
+
+<div th:if="${selectedCondiments != null}">
+  <ul>
+    <li th:each="c : ${selectedCondiments}" th:text="${c}"></li>
+  </ul>
+</div>
+
+<div th:if="${selectedCondiments == null}">
+  <p>Không có gia vị nào được chọn</p>
+</div>
+
+<a href="/">Quay lại</a>
+
+</body>
+</html>
