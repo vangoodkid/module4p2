@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>USD to VND</title>
+</head>
+<body>
+<h2>Chuyển đổi USD sang VNĐ</h2>
+
+<form th:action="@{/convert}" method="post">
+  Tỉ giá (VNĐ/USD): <input type="text" name="rate"><br><br>
+  Số tiền USD: <input type="text" name="usd"><br><br>
+  <button type="submit">Chuyển đổi</button>
+</form>
+
+</body>
+</html>
