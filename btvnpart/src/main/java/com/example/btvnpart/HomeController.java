@@ -1,4 +1,4 @@
-package com.example.btvnpart.controller;
+package com.example.btvnpart;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

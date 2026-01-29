@@ -1,0 +1,23 @@
+<h2>Product List</h2>
+
+<a href="/products/create">Create new</a>
+
+<form action="/products/search">
+  <input name="name" placeholder="Search name">
+  <button>Search</button>
+</form>
+
+<table border="1">
+  <tr>
+    <th>Name</th><th>Price</th><th>Action</th>
+  </tr>
+  <tr th:each="p : ${products}">
+    <td th:text="${p.name}"></td>
+    <td th:text="${p.price}"></td>
+    <td>
+      <a th:href="@{/products/view/{id}(id=${p.id})}">View</a>
+      <a th:href="@{/products/edit/{id}(id=${p.id})}">Edit</a>
+      <a th:href="@{/products/delete/{id}(id=${p.id})}">Delete</a>
+    </td>
+  </tr>
+</table>

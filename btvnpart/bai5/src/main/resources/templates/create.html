@@ -1,0 +1,7 @@
+<form method="post" th:object="${product}">
+  Name: <input th:field="*{name}"><br>
+  Price: <input th:field="*{price}"><br>
+  Description: <input th:field="*{description}"><br>
+  Manufacturer: <input th:field="*{manufacturer}"><br>
+  <button>Save</button>
+</form>

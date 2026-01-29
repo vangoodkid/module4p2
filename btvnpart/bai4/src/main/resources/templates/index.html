@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Calculator</title>
+</head>
+<body>
+
+<h1>Calculator</h1>
+
+<form action="/convert" method="post">
+  <label>Rate:</label>
+  <input type="number" name="rate" required>
+  <br><br>
+
+  <label>USD:</label>
+  <input type="number" name="usd" required>
+  <br><br>
+
+  <button type="submit">Convert</button>
+</form>
+
+</body>
+</html>
